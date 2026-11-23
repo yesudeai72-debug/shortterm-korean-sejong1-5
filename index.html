@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>세종한국어 1 · 5과 물건 사기 2</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="paper">
+    <header class="paper-head">
+      <p class="kicker">단원 평가 · 5과</p>
+      <h1 id="title"></h1>
+      <p id="subtitle" class="subtitle"></p>
+      <div class="info-row">
+        <label>이름 <input id="student" type="text" autocomplete="off" /></label>
+        <label>반 <input type="text" class="tiny" autocomplete="off" /></label>
+        <label>날짜 <input type="text" class="small" autocomplete="off" /></label>
+        <span class="total-tag">채점 문항 <b id="total">0</b>개</span>
+      </div>
+    </header>
+
+    <div id="exam"></div>
+
+    <div id="result" class="result" hidden></div>
+
+    <footer class="actions">
+      <button id="submit" class="btn primary" type="button">제출하고 채점하기</button>
+      <button id="retry" class="btn" type="button" hidden>다시 풀기</button>
+      <button id="print" class="btn" type="button">인쇄하기</button>
+    </footer>
+    <p class="credit">문항 출처: 세종학당재단, 『세종한국어 1 익힘책』 5과 물건 사기 2 (66~69쪽, 72~76쪽). 수업용 연습 자료입니다.</p>
+  </main>
+
+  <script src="questions.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
